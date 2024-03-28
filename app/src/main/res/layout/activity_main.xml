@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Player 1 Score -->
+    <TextView
+        android:id="@+id/textViewPlayer1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1_total_scorep1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Player 2 Score -->
+
+    <TextView
+        android:id="@+id/textViewPlayer2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/player_2_total_scorep2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDice"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPlayer1Score"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Jackpot Score -->
+
+    <TextView
+        android:id="@+id/textViewJackpotScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/current_jackpot_scorejp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDice"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPlayer2Score" />
+    <!-- Dice ImageView -->
+
+    <ImageView
+        android:id="@+id/imageViewDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/dice" />
+
+    <!-- Current Player Turn -->
+
+    <TextView
+        android:id="@+id/textViewCurrentPlayerTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/current_player_turn_player_1_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewJackpotScore" />
+
+    <!-- Roll Die Button -->
+
+    <Button
+        android:id="@+id/buttonRollDie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/roll_die"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCurrentPlayerTurn" />
+
+    <!-- Equation Text -->
+
+
+    <TextView
+        android:id="@+id/textViewEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/_7_8"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRollDie" />
+
+    <!-- Text Box for Answer -->
+
+    <!-- Guess Button -->
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:background="@color/design_default_color_error"
+        android:backgroundTint="#000000"
+        android:hint="@string/put_your_answer_here"
+        android:inputType="numberSigned"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEquation"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRollDie"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/guess"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

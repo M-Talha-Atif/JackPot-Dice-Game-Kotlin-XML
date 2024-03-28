@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">hw1</string>
+    <string name="player_1_turn">Player 1 Turn</string>
+    <string name="player_2_turn">Player 2 Turn</string>
+    <string name="roll">Roll</string>
+    <string name="problem_answer">Problem Answer</string>
+    <string name="player_1_turns">Player 1 Turn</string>
+    <string name="enter_a_number">Enter a number:</string>
+    <string name="submit">Submit</string>
+    <string name="enter_a_number_description">Text field to input a number</string>
+    <string name="submit_button_description">Button to submit the input</string>
+    <string name="enter_a_number_hint">Enter a number</string>
+    <string name="guess">Guess</string>
+    <string name="roll_die">Roll Die</string>
+    <string name="put_your_answer_here">---Guess---</string>
+    <string name="dice">DICE</string>
+    <string name="current_player_turn_player_1_2">Current Player Turn: Player 1/2</string>
+    <string name="_7_8">7 + 8 =</string>
+    <string name="current_jackpot_scorejp">Current Jackpot : scoreJP</string>
+    <string name="player_1_total_scorep1">Player 1 total : scoreP1</string>
+    <string name="player_2_total_scorep2">Player 2 total : scoreP2</string>
+
+
+</resources>
